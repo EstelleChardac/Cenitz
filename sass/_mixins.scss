@@ -1,0 +1,26 @@
+@mixin startProject {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin bodyStart {
+min-height: 100vh;
+margin: 0;
+padding: 0;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin nav-items {
+  cursor: pointer;
+}
