@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap");
 body {
   background-color: rgba(219, 228, 221, 0.29); }
@@ -6,8 +7,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1.6fr 1fr;
   grid-template-rows: repeat(2, 0.5fr);
-  grid-column-gap: 24px;
-  grid-row-gap: 36px;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 3rem;
   height: 400px; }
   .containerChef__text1 {
     grid-area: 1 / 1 / 2 / 2; }
@@ -25,9 +26,34 @@ p {
   height: 100%;
   justify-items: center;
   align-items: center;
-  background-color: white;
-  margin: 0; }
+  background-color: white; }
 
+.containerChef__image {
+  width: 350px;
+  height: 500px;
+  margin-left: 0.7rem; }
+
+/*comment faire avec l'image du milieu : si je l'enlève des div, la structure du grid n'est plus là. 
+et si je la laisse, elle sera sensible au hover*/
+.container__text5
+.container__text6
+.container__text7
+.container__text8 {
+  opacity: 0; }
+
+.container__text5
+.container__text6
+.container__text7
+.container__text8 {
+  opacity: 0; }
+
+/* marges sur les blocs ne fonctionnent pas
+.container__text1 {
+    margin-top: 1 rem;
+}*/
+/*
+div 1 opacité passe à 0 
+div 2 opacité passe à 100%*/
 .navBar {
   min-width: 100vh;
   height: 4rem;
