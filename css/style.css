@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap");
 body {
   background-color: rgba(228, 220, 219, 0.29); }
 
@@ -15,6 +16,7 @@ p {
   justify-content: center; }
 
 form {
+  font-family: Helvetica;
   display: flex;
   flex-direction: column;
   margin: 50px; }
@@ -29,10 +31,32 @@ form {
   padding: 15px; }
 
 #date {
-  padding: 15px; }
+  padding: 15px;
+  font-family: helvetica;
+  font-weight: lighter; }
 
 #message {
-  padding: 15px; }
+  padding: 15px;
+  font-family: helvetica; }
+
+.navBar {
+  min-width: 100vh;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  font-family: "Montserrat", sans-serif; }
+  .navBar__logo {
+    width: 11rem;
+    height: 4rem; }
+  .navBar__list {
+    list-style: none;
+    display: flex; }
+  .navBar__items {
+    margin: 0 2rem 0 11rem; }
+    .navBar__items:hover {
+      cursor: pointer; }
 
 p {
   font-family: helvetica;
@@ -53,3 +77,21 @@ footer {
 title {
   font-family: montserrat regular;
   font-weight: 1.5rem; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+* {
+  margin: 0; }
+
+html,
+body {
+  min-height: 100vh; }
+
+body {
+  background: rgba(219, 228, 221, 0.29);
+  padding: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; }

@@ -5,7 +5,7 @@
 p {
     font-family: helvetica;
     font-weight: lighter;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-size: 18px;
     margin: 70px;
     padding: 30px;
@@ -19,6 +19,7 @@ p {
 }
 
 form {
+font-family: Helvetica;
 display: flex;
 flex-direction: column;
 margin: 50px;
@@ -35,7 +36,10 @@ padding: 15px;
 }
 #date {
     padding: 15px;
+    font-family: helvetica;
+    font-weight: lighter;
 }
 #message {
     padding: 15px;
+    font-family: helvetica;
 }
