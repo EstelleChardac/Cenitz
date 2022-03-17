@@ -33,6 +33,9 @@
     margin: 0 2rem 0 11rem; }
     .navBar__items:hover {
       cursor: pointer; }
+  .navBar__link {
+    color: inherit;
+    text-decoration: none; }
 
 *,
 *::before,
