@@ -247,6 +247,9 @@ li {
   grid-template-rows: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .description {
