@@ -11,3 +11,5 @@
 .social {
   width: 2rem;
   height: 2rem; }
+  .social:hover {
+    cursor: pointer; }
