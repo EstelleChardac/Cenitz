@@ -1,0 +1,55 @@
+body {
+  background-color: rgba(228, 220, 219, 0.29); }
+
+p {
+  font-family: helvetica;
+  font-weight: lighter;
+  background-color: white;
+  font-size: 18px;
+  margin: 70px;
+  padding: 30px; }
+
+.contact__form {
+  font-family: helvetica;
+  font-weight: lighter;
+  justify-content: center; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px; }
+
+#name {
+  padding: 15px; }
+
+#firstname {
+  padding: 15px; }
+
+#Mail {
+  padding: 15px; }
+
+#date {
+  padding: 15px; }
+
+#message {
+  padding: 15px; }
+
+p {
+  font-family: helvetica;
+  letter-spacing: 10%;
+  font-weight: 1.1rem; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word; }
+
+nav {
+  font-family: montserrat regular;
+  font-weight: 1.5rem; }
+
+footer {
+  font-family: montserrat regular;
+  font-weight: 1.1rem; }
+
+title {
+  font-family: montserrat regular;
+  font-weight: 1.5rem; }

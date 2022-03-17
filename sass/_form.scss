@@ -1,0 +1,41 @@
+ body {
+    background-color: rgba(228, 220, 219, 0.29);
+ }
+ 
+p {
+    font-family: helvetica;
+    font-weight: lighter;
+    background-color: white;
+    font-size: 18px;
+    margin: 70px;
+    padding: 30px;
+}
+.contact {
+&__form {
+    font-family: helvetica;
+    font-weight: lighter;
+    justify-content: center;
+}
+}
+
+form {
+display: flex;
+flex-direction: column;
+margin: 50px;
+}
+
+#name {
+padding: 15px;
+}
+#firstname {
+    padding: 15px;
+}
+#Mail {
+    padding : 15px;
+}
+#date {
+    padding: 15px;
+}
+#message {
+    padding: 15px;
+}
