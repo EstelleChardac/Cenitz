@@ -1,11 +1,9 @@
-/*.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.5rem;
-    height: 600px;
-    }*/
-   
-    .containerChef {
+      
+    body {
+        background-color: rgba(219, 228, 221, 0.29);    
+    }
+
+      .containerChef {
         display: grid;
         grid-template-columns: 1fr 1.6fr 1fr;
         grid-template-rows: repeat(2, 0.5fr);
@@ -20,12 +18,12 @@
         &__text4 { grid-area: 2 / 3 / 3 / 4; }
     }
 
-    div  {
+   p
+   { 
+    display: grid;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
     background-color: white;
-    text-align: center;
-    vertical-align: middle;
-   }
-
-   .container__text1 {
-    padding: 1 rem;
-   }
+    margin: 0;
+}
