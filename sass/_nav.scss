@@ -1,0 +1,29 @@
+// Navbar font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap");
+
+// NAVBAR
+.navBar {
+  min-width: 100vh;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+
+  &__logo {
+    width: 11rem;
+    height: 4rem;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+  &__items {
+    margin: 0 2rem 0 11rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

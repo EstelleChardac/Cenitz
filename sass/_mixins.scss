@@ -1,6 +1,6 @@
 @mixin startProject {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 @mixin bodyStart {
@@ -17,8 +17,7 @@ padding: 0;
 
 @mixin nav-bar {
   display: flex;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
 @mixin nav-items {
