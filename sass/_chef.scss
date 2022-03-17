@@ -11,11 +11,11 @@
         grid-row-gap: 3rem;
         height: 400px;
         
-        &__text1 { grid-area: 1 / 1 / 2 / 2; }
+        &__text1 &__text5 { grid-area: 1 / 1 / 2 / 2; }
         &__image { grid-area: 1 / 2 / 3 / 3; }
-        &__text2 { grid-area: 1 / 3 / 2 / 4; }
-        &__text3 { grid-area: 2 / 1 / 3 / 2; }
-        &__text4 { grid-area: 2 / 3 / 3 / 4; }
+        &__text2 &__text6 { grid-area: 1 / 3 / 2 / 4; }
+        &__text3 &__text7 { grid-area: 2 / 1 / 3 / 2; }
+        &__text4 &__text8 { grid-area: 2 / 3 / 3 / 4; }
     }
 
    p { 
@@ -27,32 +27,43 @@
 }
 
 .containerChef__image {
-    width: 350px;
-    height: 500px;
-    margin-left: 0.7rem;
+    width: 100%;
+    height: 100vh;
+    min-width: 100px;
 }
 
-/*comment faire avec l'image du milieu : si je l'enlève des div, la structure du grid n'est plus là. 
-et si je la laisse, elle sera sensible au hover*/
-
-
-
-.container__text5 
-.container__text6  
-.container__text7
+.container__text5 {
+    display: none;
+}
+.container__text6 {
+    display: none;
+}
+.container__text7 {
+    display: none;
+}
 .container__text8 {
-    opacity: 0;
+    display: none;
+}
+
+.container__text1:hover {
+    display: none;
+}
+
+.container__text2:hover {
+    display: none;
+}
+
+.container__text3:hover {
+    display: none;
+}
+.container__text4:hover {
+    display: none;
 }
 
 
-.container__text5 
-.container__text6  
-.container__text7
-.container__text8 {
-    opacity: 0;
-}
-
-
+/*.container__text5:hover {
+    display: inline;
+}*/
 
 
 /* marges sur les blocs ne fonctionnent pas
