@@ -147,7 +147,7 @@ li {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.205);
   background-clip: content-box;
   border: 0.25rem solid transparent;
   border-radius: 50%;
@@ -180,11 +180,11 @@ li {
 .carousel::after {
   content: "";
   z-index: 1;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.11);
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center center;
-  color: #fff;
+  color: white;
   font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
@@ -199,28 +199,18 @@ li {
 .food {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px; }
 
 .description {
-  grid-area: 1 / 1 / 3 / 2; }
+  grid-area: 1 / 1 / 2 / 2; }
 
 .menu {
-  grid-area: 1 / 2 / 3 / 3;
+  grid-area: 1 / 2 / 2 / 3;
   background-color: rgba(219, 228, 221, 0.6);
-  border-radius: 30px;
   text-align: center;
   padding: 15%; }
-
-.pict {
-  grid-area: 3 / 1 / 4 / 3;
-  justify-self: center;
-  height: 20em; }
-
-.pict img {
-  border-radius: 30px;
-  width: 100%; }
 
 body {
   background-color: rgba(219, 228, 221, 0.29);
