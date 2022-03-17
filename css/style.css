@@ -26,7 +26,9 @@ body {
     grid-area: 2 / 3 / 3 / 4; }
 
 div {
-  background-color: white; }
+  background-color: white;
+  text-align: center;
+  vertical-align: middle; }
 
 .container__text1 {
   padding: 1 rem; }
