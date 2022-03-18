@@ -48,7 +48,7 @@
   margin: 0 auto;
   padding: 0 1.25rem;
   font-family: "Lato", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 3%;
 }
 
 * {
@@ -254,12 +254,12 @@ li {
 
 .description {
   grid-area: 1 / 1 / 2 / 2;
+  padding: 15%;
 }
 
 .menu {
   grid-area: 1 / 2 / 2 / 3;
   background-color: rgba(219, 228, 221, 0.6);
-  text-align: center;
   padding: 15%;
 }
  
