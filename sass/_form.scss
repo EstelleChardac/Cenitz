@@ -8,7 +8,7 @@
         margin: auto;  
         &__input {
             padding: 10px;
-            background: rgba(255, 255, 5, 0);
+            background: rgba(255, 118, 5, 0);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.3);
             margin-top: 20px;
@@ -21,8 +21,11 @@
             resize: none;
         }
             input:focus {
-            border: 2px solid rgb(219, 228, 221);          
+            border: 2px solid rgb(219, 228, 221);        
         }
+            input:focus::placeholder{
+                color: transparent;
+            }
             textarea:focus {
             border: 2px solid rgb(219, 228, 221); 
         }

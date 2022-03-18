@@ -26,4 +26,8 @@
       cursor: pointer;
     }
   }
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
 }
