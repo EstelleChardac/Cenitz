@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  body {
     background-color: rgba(228, 220, 219, 0.29);
  }
@@ -91,3 +92,33 @@ padding: 15px;
 #submit:hover {
     background:rgb(219, 228, 221);
 }
+=======
+.contact {
+    &__form {
+        font-family: Helvetica;
+        font-weight: lighter;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        &__input {
+            padding: 5px;
+        background: rgba(255, 255, 255, 0.13);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        }    
+    }
+    &__text {
+        font-size: 18px;
+        margin: 70px;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.13);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+>>>>>>> 696f183 (STYLE: MAJ du scss + tentative de JS pour le submit button)
