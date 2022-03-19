@@ -72,6 +72,8 @@ body {
   justify-content: space-around;
   align-items: center;
   font-family: "Montserrat", sans-serif; }
+  .footer:hover {
+    color: #2b2b2b; }
 
 .social {
   width: 1.5rem;
