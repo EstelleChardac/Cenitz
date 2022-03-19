@@ -61,6 +61,8 @@ body {
   .contact__form textarea {
     font-family: Helvetica;
     resize: none; }
+  .contact__form textarea:focus::placeholder {
+    color: transparent; }
   .contact__form input:focus {
     border: 2px solid #dbe4dd; }
   .contact__form input:focus::placeholder {
@@ -76,8 +78,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
-  width: 50%; }
+  width: 50%;
+  margin: auto; }
 
 #submit {
   border: none;
