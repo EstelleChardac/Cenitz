@@ -5,12 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="form.js"> </script>
+    <script src="form.js"></script>
     <title>CENITZ</title>
   </head>
   <body>
     <!-- NAVIGATION BAR -->
-    <nav></nav>
+
+    <nav class="navBar">
+      <img
+        class="navBar__logo"
+        src="./Assets/pictures/logo_cenitz.png"
+        alt="logo cenitz"
+      />
+      <ul class="navBar__list">
+        <a class="navBar__link" href="./food.html"
+          ><li class="navBar__items" id="kitchen">LA CUISINE</li></a
+        >
+        <a class="navBar__link" href="./chef.html"
+          ><li class="navBar__items" id="chef">LE CHEF</li>
+        </a>
+        <a class="navBar__link" href="./restaurant.html">
+          <li class="navBar__items" id="restaurant">LE LIEU</li></a
+        >
+        <a class="navBar__link" href="./form.html"
+          ><li class="navBar__items" id="booking">RESERVATION</li></a
+        >
+      </ul>
+    </nav>
+    <main class="hero">
+      <video autoplay muted loop class="hero__video">
+        <source src="./Assets/video/plat1.mp4" type="video/mp4" />
+      </video>
+    </main>
+
 
     <!-- Footer -->
     <footer class="footer">
