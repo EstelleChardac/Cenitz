@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>CENITZ</title>
   </head>
-  <body>
-    <!-- NAVIGATION BAR -->
+  <body onresize="hide()">
+    <!-- >> NAVIGATION BAR -->
     <nav class="navBar">
       <img
         class="navBar__logo"
@@ -29,8 +29,44 @@
           ><li class="navBar__items" id="booking">RESERVATION</li></a
         >
       </ul>
+
+      <!-- >> Burger button -->
+      <div class="burgerButton">
+        <img
+          class="navBar__burger"
+          src="./Assets/pictures/bars-solid.svg"
+          alt=""
+        />
+      </div>
+
+      <!-- >> Burger navigation -->
+      <nav class="burgerNav">
+        <ul class="burgerNav__list">
+          <a class="burgerNav__link" href="./food.html"
+            ><li class="burgerNav__items" id="kitchen">LA CUISINE</li></a
+          >
+          <a class="burgerNav__link" href="./chef.html"
+            ><li class="burgerNav__items" id="chef">LE CHEF</li>
+          </a>
+          <a class="burgerNav__link" href="./restaurant.html">
+            <li class="burgerNav__items" id="restaurant">LE LIEU</li></a
+          >
+          <a class="burgerNav__link" href="./form.html"
+            ><li class="burgerNav__items" id="booking">RESERVATION</li></a
+          >
+        </ul>
+      </nav>
+
+      <!-- <button class="box burgerBox">
+      <div class="box__lineContainer">
+        <div class="burgerBox__lines burgerBox__line1"></div>
+        <div class="burgerBox__lines burgerBox__line2"></div>
+        <div class="burgerBox__lines burgerBox__line3"></div>
+      </div>
+    </button> -->
     </nav>
 
     <footer></footer>
+    <script src="./index.js"></script>
   </body>
 </html>
