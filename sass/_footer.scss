@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap%22");
 
+// >> footer
 .footer {
   position: fixed;
   width: 100%;
@@ -13,11 +14,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
+// >> email link
 #mailing {
   text-decoration: none;
   color: inherit;
 }
 
+// >> social media icones
 .social {
   width: 1.5rem;
   height: 1.5rem;
