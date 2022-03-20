@@ -4,6 +4,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  z-index: -1;
 
   &__video {
     position: absolute;
@@ -12,6 +13,5 @@
     right: 0;
     bottom: 0;
     background-position: left;
-    // opacity: .9;
   }
 }
