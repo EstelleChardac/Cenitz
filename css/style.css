@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap%22");
 p {
   font-family: Helvetica;
   font-weight: lighter;
@@ -181,17 +182,14 @@ body {
   justify-content: space-around;
   align-items: center;
   font-family: "Montserrat", sans-serif; }
-
   .footer:hover {
     color: #2b2b2b; }
-
 
 .social {
   width: 1.5rem;
   height: 1.5rem; }
   .social:hover {
     cursor: pointer; }
-
 
 .hero {
   width: 100vw;
@@ -203,15 +201,13 @@ body {
     right: 0;
     bottom: 0;
     background-position: left;
-    width: 100vw;
-    height: calc(100% - 4rem); }
+    width: 100vw; }
 
 .image {
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center; }
-
 
 .contact__form {
   font-family: Helvetica;
