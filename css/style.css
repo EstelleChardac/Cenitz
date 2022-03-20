@@ -183,20 +183,15 @@ body {
   align-items: center;
   font-family: "Montserrat", sans-serif; }
 
-  .footer:hover {
-    color: #2b2b2b; }
-
 #mailing {
   text-decoration: none;
   color: inherit; }
-
 
 .social {
   width: 1.5rem;
   height: 1.5rem; }
   .social:hover {
     cursor: pointer; }
-
 
 @media all and (max-width: 1100px) {
   .footer {
@@ -225,7 +220,6 @@ body {
     .social:hover {
       cursor: pointer; } }
 
-
 .hero {
   position: fixed;
   width: 100vw;
@@ -239,15 +233,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
-
-    background-position: left;
-    width: 100vw; }
-
-.image {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+    background-position: left; }
 
 .contact__form {
   font-family: Helvetica;
