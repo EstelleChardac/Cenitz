@@ -1,22 +1,17 @@
 .hero {
+  position: fixed;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
 
   &__video {
-    position: fixed;
+    position: absolute;
+    max-width: 100%;
+    top: 0;
     right: 0;
     bottom: 0;
     background-position: left;
-    width: 100vw;
-    // height: calc(100% - 4rem);
+    // opacity: .9;
   }
-}
-
-.image {
-   position: fixed;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
