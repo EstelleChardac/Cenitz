@@ -182,8 +182,14 @@ body {
   justify-content: space-around;
   align-items: center;
   font-family: "Montserrat", sans-serif; }
+
   .footer:hover {
     color: #2b2b2b; }
+
+#mailing {
+  text-decoration: none;
+  color: inherit; }
+
 
 .social {
   width: 1.5rem;
@@ -191,15 +197,49 @@ body {
   .social:hover {
     cursor: pointer; }
 
+
+@media all and (max-width: 1100px) {
+  .footer {
+    font-size: 0.8rem; }
+  .social {
+    width: 1.2rem;
+    height: 1.2rem; }
+    .social:hover {
+      cursor: pointer; } }
+
+@media all and (max-width: 900px) {
+  .footer {
+    font-size: 0.6rem; }
+  .social {
+    width: 1rem;
+    height: 1rem; }
+    .social:hover {
+      cursor: pointer; } }
+
+@media all and (max-width: 650px) {
+  .footer {
+    font-size: 0.4rem; }
+  .social {
+    width: 0.8rem;
+    height: 0.8rem; }
+    .social:hover {
+      cursor: pointer; } }
+
+
 .hero {
+  position: fixed;
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  z-index: -1; }
   .hero__video {
-    position: fixed;
+    position: absolute;
+    max-width: 100%;
+    top: 0;
     right: 0;
     bottom: 0;
+
     background-position: left;
     width: 100vw; }
 
