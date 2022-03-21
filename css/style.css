@@ -158,8 +158,6 @@ body {
   max-width: 50rem;
   margin: 0 auto;
   padding: 0 1.25rem;
-  font-family: "Lato", sans-serif;
-  margin-bottom: 1%;
   box-sizing: border-box;
   scrollbar-color: transparent transparent;
   /* thumb and track color */
@@ -167,7 +165,7 @@ body {
   -ms-overflow-style: none; }
 
 *::-webkit-scrollbar {
-  width: 0; }
+  display: none; }
 
 *::-webkit-scrollbar-track {
   background: transparent; }
@@ -325,6 +323,7 @@ li {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   max-width: 50rem;
+  max-height: fit-content;
   margin: 0 auto;
   padding: 0 1.25rem; }
 
@@ -338,14 +337,34 @@ li {
     margin-top: 20px;
     font-weight: lighter; }
   .food p {
-    line-height: 1.5em; }
+    margin-bottom: 3%; }
 
 .food__description {
   grid-area: 1 / 1 / 2 / 2;
-  padding-top: 30px; }
+  padding-top: 4%; }
 
 .food__menu {
   grid-area: 1 / 2 / 2 / 3;
   background-color: rgba(219, 228, 221, 0.6);
   padding: 15%;
-  padding-top: 30px; }
+  padding-top: 4%; }
+
+.food__menu {
+  -webkit-animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
