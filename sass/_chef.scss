@@ -1,3 +1,8 @@
+  
+  body {
+      line-height: normal;
+  }
+
   .containerChef {
             display: grid;
             grid-template-columns: 1fr 1.6fr 1fr;
@@ -23,7 +28,14 @@
         &__:hover + &__text {
             opacity: 1;
         } 
-    }
+        }
+
+       &__text {
+        padding : 15px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 10%;
+        } 
     
         &__image {
             grid-area: 1/2/3/3;
@@ -32,9 +44,7 @@
         } 
     }
 
+// baisser le line-height à 1
+// augmenter le padding 
 
-     // &__text {
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        // } 
+  
