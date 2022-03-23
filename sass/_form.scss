@@ -5,7 +5,7 @@
         display:flex;
         flex-direction: column;
         align-items: center;    
-        margin: auto;  
+        margin: auto;
         &__input {
             padding: 10px;
             background: rgba(255, 118, 5, 0);
@@ -20,9 +20,6 @@
             font-family: Helvetica;
             resize: none;
         }
-        textarea:focus::placeholder{
-            color: transparent;
-        }
             input:focus {
             border: 2px solid rgb(219, 228, 221);        
         }
@@ -30,9 +27,11 @@
                 color: transparent;
             }
             textarea:focus {
-            border: 2px solid rgb(219, 228, 221); 
-        }
-        
+                border: 2px solid rgb(219, 228, 221); 
+            }
+        }   textarea:focus::placeholder{
+                color: transparent;
+            
     }
     &__text {
         font-size: 18px;
@@ -42,9 +41,10 @@
         display:flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
         margin: auto;
-        
+        width: 50%;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
     }
 }
 #submit {
