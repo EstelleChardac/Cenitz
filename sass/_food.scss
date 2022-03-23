@@ -66,18 +66,17 @@
   border: none;
 }
 
-ol,
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .carousel {
-  position: relative;
+  position:relative;
   padding-top: 75%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
+  ol,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .carousel__viewport {
@@ -172,7 +171,7 @@ li {
 .carousel__navigation_item {
   display: inline-block;
 }
-
+ 
 .carousel__navigation_button {
   display: inline-block;
   width: 1.5rem;
