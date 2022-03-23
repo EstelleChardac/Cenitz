@@ -531,3 +531,44 @@ li {
   grid-area: 1 / 2 / 2 / 3;
   background-color: rgba(219, 228, 221, 0.6);
   padding: 15%; }
+
+*, *::before, *, *::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0%; }
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative; }
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0; }
+
+.slide > img {
+  display: block;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center; }
+
+.slide[data-active] {
+  opacity: 1; }
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #dbe4dd4a; }
