@@ -1,9 +1,9 @@
 // >> Navbar font
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap');
 
 // >> NAVBAR
 .navBar {
-  position: absolute;
+  position: relative;
   min-width: 100vw;
   height: 4rem;
   display: flex;
@@ -11,11 +11,12 @@
   align-items: center;
   background: #fff;
   outline: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   &__logo {
     width: 11rem;
     height: 4rem;
+    cursor: pointer;
   }
   &__list {
     list-style: none;
@@ -53,7 +54,7 @@
   min-height: 100%;
   top: 4rem;
   background: #d4f5db4a;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   right: 0;
   border-radius: 2px;
   outline: none;
@@ -100,7 +101,7 @@
     align-items: center;
     background: #fff;
     outline: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     &__items {
       margin: 0 1rem 0 11rem;
@@ -117,7 +118,7 @@
     align-items: center;
     background: #fff;
     outline: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     &__items {
       margin: 0 1rem 0 9rem;
@@ -134,7 +135,7 @@
     align-items: center;
     background: #fff;
     outline: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     &__items {
       margin: 0 1rem 0 6rem;
@@ -151,7 +152,7 @@
     align-items: center;
     background: #fff;
     outline: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     &__items {
       margin: 0 1rem 0 4rem;
