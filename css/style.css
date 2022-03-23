@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap%22");
 p {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -65,7 +64,7 @@ body {
       cursor: pointer;
       color: #1616164a; }
   .navBar__burger {
-    position: relative;
+    position: absolute;
     width: 2rem;
     height: 2rem;
     right: 1rem;
@@ -77,12 +76,13 @@ body {
   width: 12rem;
   min-height: 100%;
   top: 4rem;
-  background: #d4f5db4a;
+  background: #a9e2b54a;
   font-family: 'Montserrat', sans-serif;
   right: 0;
   border-radius: 2px;
   outline: none;
-  display: none; }
+  display: none;
+  color: #fff; }
   .burgerNav__list {
     list-style: none;
     display: flex;
@@ -98,14 +98,14 @@ body {
     padding: 2.5rem 0; }
     .burgerNav__items:hover {
       cursor: pointer;
-      color: #1616164a; }
+      color: #a0a0a0; }
 
 .show {
   display: block; }
 
 @media all and (max-width: 1388px) {
   .navBar {
-    position: absolute;
+    position: relative;
     min-width: 100vw;
     height: 4rem;
     display: flex;
@@ -119,7 +119,7 @@ body {
 
 @media all and (max-width: 1318px) {
   .navBar {
-    position: absolute;
+    position: relative;
     min-width: 100vw;
     height: 4rem;
     display: flex;
@@ -133,7 +133,7 @@ body {
 
 @media all and (max-width: 1189px) {
   .navBar {
-    position: absolute;
+    position: relative;
     min-width: 100vw;
     height: 4rem;
     display: flex;
@@ -147,7 +147,7 @@ body {
 
 @media all and (max-width: 1005px) {
   .navBar {
-    position: absolute;
+    position: relative;
     min-width: 100vw;
     height: 4rem;
     display: flex;
@@ -165,7 +165,7 @@ body {
   .navBar__list {
     display: none; }
   .navBar__burger {
-    display: block;
+    display: flex;
     outline: none; } }
 
 @media all and (min-width: 876px) {
@@ -299,7 +299,6 @@ body {
   color: transparent; }
 
 .contact__text {
-  font-size: 18px;
   padding: 30px;
   background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
