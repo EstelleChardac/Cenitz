@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap%22");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap%22');
 
 // >> footer
 .footer {
@@ -11,13 +11,22 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
-}
-
-// >> email link
-#mailing {
-  text-decoration: none;
-  color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  &__infos {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: #a0b48d;
+    }
+  }
+  &__mailing {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: #a0b48d;
+    }
+  }
 }
 
 // >> social media icones
@@ -26,6 +35,8 @@
   height: 1.5rem;
   &:hover {
     cursor: pointer;
+    color: #a0b48d;
+    transform: scale(1.2);
   }
 }
 
