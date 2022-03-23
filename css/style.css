@@ -266,12 +266,12 @@ body {
 
 @media all and (max-width: 768px) {
   .containerChef p {
-    font-size: 0.75rem; }
+    font-size: 0.7rem; }
   .containerChef h1 {
     font-size: 0.8rem; }
   .containerChef div {
-    height: 12rem;
-    width: 12rem; }
+    height: 11rem;
+    width: 11rem; }
   .containerChef__image {
     grid-area: 1/2/3/3;
     width: 20rem;
