@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>RESERVATION</title>
+  </head>
+  <body>
+    <!-- >> NAVIGATION BAR -->
+    <nav class="navBar">
+      <a href="./index.html"
+        ><img
+          class="navBar__logo"
+          src="./Assets/pictures/logo_cenitz.png"
+          alt="logo du restaurant cenitz"
+      /></a>
+      <ul class="navBar__list">
+        <a class="navBar__link" href="./food.html"
+          ><li class="navBar__items" id="kitchen">LA CUISINE</li></a
+        >
+        <a class="navBar__link" href="./chef.html"
+          ><li class="navBar__items" id="chef">LE CHEF</li>
+        </a>
+        <a class="navBar__link" href="./restaurant.html">
+          <li class="navBar__items" id="restaurant">LE LIEU</li></a
+        >
+        <a class="navBar__link" href="./form.html"
+          ><li class="navBar__items" id="booking">RESERVATION</li></a
+        >
+      </ul>
+    </nav>
 
+    <!-- >> Burger navigation -->
+    <nav class="burgerNav">
+      <ul class="burgerNav__list">
+        <a class="burgerNav__link" href="./food.html"
+          ><li class="burgerNav__items" id="kitchen">LA CUISINE</li></a
+        >
+        <a class="burgerNav__link" href="./chef.html"
+          ><li class="burgerNav__items" id="chef">LE CHEF</li>
+        </a>
+        <a class="burgerNav__link" href="./restaurant.html">
+          <li class="burgerNav__items" id="restaurant">LE LIEU</li></a
+        >
+        <a class="burgerNav__link" href="./form.html"
+          ><li class="burgerNav__items" id="booking">RESERVATION</li></a
+        >
+      </ul>
+    </nav>
+
+    <!-- FORM -->
+    <section class="contact">
+        <p class="contact__text">
+            Pour réserver votre table, n’hésitez pas à nous contacter par téléphone, ou bien, à faire votre demande via ce formulaire.
+        </p>
+        
+        <form class="contact__form">
+        
+          <label for="name"></label>
+          <input class="contact__form__input" type="text" id="name" placeholder="Nom" />
+
+          <label for="firstname"></label>
+          <input class="contact__form__input" type="text" id="firstname" placeholder="Prénom" />
+
+          <label for="email"></label>
+          <input class="contact__form__input" type="email" id="Mail" placeholder="Mail" />
+
+          <label for="dates"></label>
+          <input class="contact__form__input" type="date" id="date"/>
+
+          <label for="message"></label>
+          <textarea class ="contact__form__input" id="message" name="message" placeholder="Message"></textarea>
+
+          <button id="submit">Envoyer</button>        
+        </form> 
+        </section>
+      <!-- BANNER FOR COOKIES -->
+      <script type="text/javascript" id="cookiebanner" 
+      src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.0.0/cookiebanner.min.js" 
+      data-position="bottom" data-fg="#000000" data-bg="rgb(219, 228, 221)" data-link="#000000"
+      data-moreinfo="http://www.votresite.fr/mentions-legales" 
+      data-message="Les cookies assurent le bon fonctionnement de notre site Internet. En utilisant ce dernier, vous acceptez leur utilisation." 
+      data-linkmsg="En savoir plus"></script>
+       <!-- >> Footer -->
+    <footer class="footer">
+      <span>CENITZ</span>
+      <span>12 RUE NUNGESSER - Bidart</span>
+      <span>LUNDI au SAMEDI 12H-15H / 19H-22H</span>
+      <span>06.10.43.90.58</span>
+      <span
+        ><a id="mailing" href="mailto:cenitz@gmail.com"
+          >cenitz@gmail.com</a
+        ></span
+      >
+      <!-- >> social media icones -->
+      <a href="#">
+        <img
+          class="social"
+          src="./assets/social media/facebook-square-brands.svg"
+          alt="logo Facebook"
+        />
+      </a>
+      <a href="#">
+        <img
+          class="social"
+          src="./assets/social media/instagram.svg"
+          alt="logo Instagram"
+        />
+      </a>
+    </footer>
+    <script src="form.js"></script>
+    
+  </body>
+</html>
