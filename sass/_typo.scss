@@ -1,23 +1,26 @@
+
 p {
-    font-family: Helvetica;
-    font-weight: lighter;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     letter-spacing: 10%;
-    font-weight: 1.1rem;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    padding: 1rem;
 }
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
   }
 
-// a deplacer
-// nav {
-// font-family: montserrat regular; //j'ai download la police mais ça marche pas
-//   font-weight: 1.5rem;
-//}
-//footer {
-//    font-family: montserrat regular;
-//    font-weight: 1.1rem;
-//}
-//title {
-//    font-family: montserrat regular;
-//    font-weight:1.5rem;
-//}
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+

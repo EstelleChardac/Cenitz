@@ -2,7 +2,7 @@
   "name": "cenitz",
   "version": "1.0.0",
   "description": "WCS : Project 1",
-  "main": "./html/index.html",
+  "main": "./index.html",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
