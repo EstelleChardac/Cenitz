@@ -1,25 +1,22 @@
-  
-  /*body {
-      line-height: normal;
-  }*/
-
+  //création de la grid pour le container//
   .containerChef {
             display: grid;
             grid-template-columns: 1fr 1.6fr 1fr;
             grid-template-rows: repeat(2, 0.5fr);
-            grid-column-gap: 1.5rem;
-            grid-row-gap: 3rem;
+            grid-column-gap: 1rem;
+            grid-row-gap: 2rem;
 
+//placement des blocs dans la grid//
         div {
-            height: 250px;
-            width: 250px;
-            margin-top: 1rem;
+            height: 220px;
+            width: 220px;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: white;
         }
 
+//création des hover pour faire disparaître les titres et apparaître le texte//
         &__title { 
             position: absolute; 
         &:hover {
@@ -31,12 +28,10 @@
         }
 
        &__text {
-        padding : 15px;
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        font-size: 0.8rem;
-        letter-spacing: 10%;
+        padding : 1rem;
         } 
-    
+
+//placement de l'image dans la grid et fixer sa taille//
         &__image {
             grid-area: 1/2/3/3;
             width: 350px;
@@ -44,7 +39,6 @@
         } 
     }
 
-// baisser le line-height à 1
-// augmenter le padding 
+
 
   
