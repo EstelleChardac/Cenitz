@@ -1,0 +1,50 @@
+  
+  /*body {
+      line-height: normal;
+  }*/
+
+  .containerChef {
+            display: grid;
+            grid-template-columns: 1fr 1.6fr 1fr;
+            grid-template-rows: repeat(2, 0.5fr);
+            grid-column-gap: 1.5rem;
+            grid-row-gap: 3rem;
+
+        div {
+            height: 250px;
+            width: 250px;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        &__title { 
+            position: absolute; 
+        &:hover {
+                opacity: 0;
+            }  
+        &__:hover + &__text {
+            opacity: 1;
+        } 
+        }
+
+       &__text {
+        padding : 15px;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 10%;
+        } 
+    
+        &__image {
+            grid-area: 1/2/3/3;
+            width: 350px;
+            height: 100vh;
+        } 
+    }
+
+// baisser le line-height à 1
+// augmenter le padding 
+
+  
