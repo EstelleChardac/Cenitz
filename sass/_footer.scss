@@ -1,25 +1,82 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap%22");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap%22');
 
+// >> footer
 .footer {
-  // position: fixed;
+  position: fixed;
   width: 100%;
-  // bottom: 0;
+  background: #fff;
+  bottom: 0;
   left: 0;
   height: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
-  // &__social {
-  //   width: 2rem;
-  //   height: 2rem;
-  // }
+  font-family: 'Montserrat', sans-serif;
+  &__infos {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: #a0b48d;
+    }
+  }
+  &__mailing {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: #a0b48d;
+    }
+  }
 }
 
+// >> social media icones
 .social {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   &:hover {
     cursor: pointer;
+    color: #a0b48d;
+    transform: scale(1.2);
+  }
+}
+
+// ! Responsivness
+@media all and (max-width: 1100px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+
+  .social {
+    width: 1.2rem;
+    height: 1.2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+@media all and (max-width: 900px) {
+  .footer {
+    font-size: 0.6rem;
+  }
+
+  .social {
+    width: 1rem;
+    height: 1rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+@media all and (max-width: 650px) {
+  .footer {
+    font-size: 0.4rem;
+  }
+
+  .social {
+    width: 0.8rem;
+    height: 0.8rem;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
