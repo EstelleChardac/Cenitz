@@ -52,45 +52,86 @@
 
     <!-- FORM -->
     <section class="contact">
-        <p class="contact__text">
-            Pour réserver votre table, n’hésitez pas à nous contacter par téléphone, ou bien, à faire votre demande via ce formulaire.
-        </p>
-        
-        <form class="contact__form">
-        
-          <label for="name"></label>
-          <input class="contact__form__input" type="text" id="name" placeholder="Nom" />
+      <p class="contact__text">
+        Pour réserver votre table, n’hésitez pas à nous contacter par téléphone,
+        ou bien, à faire votre demande via ce formulaire.
+      </p>
 
-          <label for="firstname"></label>
-          <input class="contact__form__input" type="text" id="firstname" placeholder="Prénom" />
+      <form class="contact__form">
+        <label for="name"></label>
+        <input
+          class="contact__form__input"
+          type="text"
+          id="name"
+          placeholder="Nom"
+        />
 
-          <label for="email"></label>
-          <input class="contact__form__input" type="email" id="Mail" placeholder="Mail" />
+        <label for="firstname"></label>
+        <input
+          class="contact__form__input"
+          type="text"
+          id="firstname"
+          placeholder="Prénom"
+        />
 
-          <label for="dates"></label>
-          <input class="contact__form__input" type="date" id="date"/>
+        <label for="email"></label>
+        <input
+          class="contact__form__input"
+          type="email"
+          id="Mail"
+          placeholder="Mail"
+        />
 
-          <label for="message"></label>
-          <textarea class ="contact__form__input" id="message" name="message" placeholder="Message"></textarea>
+        <label for="dates"></label>
+        <input class="contact__form__input" type="date" id="date" />
 
-          <button id="submit">Envoyer</button>        
-        </form> 
-        </section>
-      <!-- BANNER FOR COOKIES -->
-      <script type="text/javascript" id="cookiebanner" 
-      src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.0.0/cookiebanner.min.js" 
-      data-position="bottom" data-fg="#000000" data-bg="rgb(219, 228, 221)" data-link="#000000"
-      data-moreinfo="http://www.votresite.fr/mentions-legales" 
-      data-message="Les cookies assurent le bon fonctionnement de notre site Internet. En utilisant ce dernier, vous acceptez leur utilisation." 
-      data-linkmsg="En savoir plus"></script>
-       <!-- >> Footer -->
+        <label for="message"></label>
+        <textarea
+          class="contact__form__input"
+          id="message"
+          name="message"
+          placeholder="Message"
+        ></textarea>
+
+        <button id="submit">Envoyer</button>
+      </form>
+    </section>
+    <!-- BANNER FOR COOKIES -->
+    <script
+      type="text/javascript"
+      id="cookiebanner"
+      src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.0.0/cookiebanner.min.js"
+      data-position="bottom"
+      data-fg="#000000"
+      data-bg="rgb(219, 228, 221)"
+      data-link="#000000"
+      data-moreinfo="http://www.votresite.fr/mentions-legales"
+      data-message="Les cookies assurent le bon fonctionnement de notre site Internet. En utilisant ce dernier, vous acceptez leur utilisation."
+      data-linkmsg="En savoir plus"
+    ></script>
+
+    <!-- >> Footer -->
     <footer class="footer">
-      <span>CENITZ</span>
-      <span>12 RUE NUNGESSER - Bidart</span>
-      <span>LUNDI au SAMEDI 12H-15H / 19H-22H</span>
-      <span>06.10.43.90.58</span>
-      <span
-        ><a id="mailing" href="mailto:cenitz@gmail.com"
+      <span class="footer__infos" title="Restaurant le Cenitz">CENITZ</span>
+      <span class="footer__infos" title="Où nous trouver ?"
+        >12 RUE NUNGESSER - Bidart</span
+      >
+      <span class="footer__infos" title="Horaires d'ouverture"
+        >LUNDI au SAMEDI 12H-15H / 19H-22H</span
+      >
+
+      <a
+        class="footer__infos"
+        href="https://wa.me/0033679177158"
+        target="_blank"
+        title="Click pour reserver via WhatsApp"
+        >06.10.43.90.58
+      </a>
+      <span class="footer__infos"
+        ><a
+          class="footer__mailing"
+          href="mailto:cenitz@gmail.com"
+          title="Click pour nous joindre"
           >cenitz@gmail.com</a
         ></span
       >
@@ -110,7 +151,7 @@
         />
       </a>
     </footer>
-    <script src="form.js"></script>
-    
+
+    <script src="./index.js"></script>
   </body>
 </html>
