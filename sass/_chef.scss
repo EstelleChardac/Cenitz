@@ -10,8 +10,8 @@
 
 //placement des blocs dans la grid//
         div {
-            height: 13rem;
-            width: 13rem;
+            height: 14rem;
+            width: 14rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,3 +40,47 @@
             height: 40rem;
         } 
     }
+
+    //  ! RESPONSIVNESS
+
+  @media all and (max-width: 768px) {
+    .containerChef {
+      p { 
+          font-size: 0.75rem;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    div {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    &__image {
+        grid-area: 1/2/3/3;
+        width: 20rem;
+        height: 32rem;
+    } 
+}
+  }
+
+  @media all and (max-width: 320px) {
+    .containerChef {
+      p { 
+          font-size: 0.7rem;
+    }
+
+    div {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    &__image {
+        grid-area: 1/2/3/3;
+        width: 20rem;
+        height: 32rem;
+    } 
+}
+  }
