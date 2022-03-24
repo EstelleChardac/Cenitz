@@ -1,0 +1,95 @@
+
+ .plate {
+    float: left;
+    border-radius: 50px;
+    padding: 1rem 1rem 1rem .2rem;
+    margin-bottom: 3rem;
+
+
+h2 > text {
+    float: right;
+
+    
+}
+
+h2 {
+    text-align: center;
+    padding: 3rem 0 1rem;
+
+  
+
+}
+
+.text {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-align: justify;
+    letter-spacing: 10%;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    padding-right: 1rem; 
+}
+
+
+.link {
+    color: black;
+}
+
+a:hover {
+    color: rgb(47, 153, 47);
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+
+
+
+
+
+
+
+
