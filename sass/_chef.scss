@@ -68,19 +68,23 @@
 
   @media all and (max-width: 320px) {
     .containerChef {
+        display: block;
+        
       p { 
-          font-size: 0.7rem;
+          font-size: 0.6rem;
     }
 
     div {
-        height: 12rem;
-        width: 12rem;
+        height: 10rem;
+        width: 10rem;
     }
 
     &__image {
-        grid-area: 1/2/3/3;
-        width: 20rem;
-        height: 32rem;
+        width: 10rem;
+        height: 16rem;
     } 
 }
   }
+
+  // penser à centrer le container en mobile//
+  // penser à augmenter les blocs en version géante cf Fred//

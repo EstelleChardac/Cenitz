@@ -278,15 +278,16 @@ body {
     height: 32rem; } }
 
 @media all and (max-width: 320px) {
-  .containerChef p {
-    font-size: 0.7rem; }
-  .containerChef div {
-    height: 12rem;
-    width: 12rem; }
-  .containerChef__image {
-    grid-area: 1/2/3/3;
-    width: 20rem;
-    height: 32rem; } }
+  .containerChef {
+    display: block; }
+    .containerChef p {
+      font-size: 0.6rem; }
+    .containerChef div {
+      height: 10rem;
+      width: 10rem; }
+    .containerChef__image {
+      width: 10rem;
+      height: 16rem; } }
 
 .contact__form {
   font-family: Helvetica;
