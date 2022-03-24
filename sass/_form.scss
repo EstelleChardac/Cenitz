@@ -58,3 +58,27 @@
 #submit:hover {
     background:rgb(219, 228, 221);
 }
+// RESPONSIVNESS //
+.contact__label{
+    @media all and (max-width: 1087px) 
+         {
+            margin-top: -0.5rem;
+        }
+    @media all and (max-width: 651px) 
+         {
+            margin-top: -0.9rem;
+        }
+    @media all and (max-width: 651px) 
+         {
+            margin-top: -1.2rem;
+        }
+    @media all and (max-width: 463px) 
+         {
+            margin-top: -1.8rem;
+        }
+    @media all and (max-width: 395px) 
+        {
+            min-width: 395px;
+            margin-top: -2.6rem;
+         }
+    }
