@@ -58,6 +58,7 @@
   outline: none;
   display: none;
   color: #fff;
+  z-index: 2;
 
   &__list {
     list-style: none;
@@ -65,6 +66,7 @@
     flex-direction: column;
     align-items: flex-end;
     margin-right: 2rem;
+    height: 5rem;
   }
 
   &__link {
