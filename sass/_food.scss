@@ -51,6 +51,75 @@
   scrollbar-color: transparent transparent; /* thumb and track color */
   scrollbar-width: 0px;
   -ms-overflow-style: none;
+
+  .carousel {
+    position:relative;
+    padding-top: 75%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    ol,
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carousel__viewport {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      overflow-x: scroll;
+      counter-reset: item;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+
+      .carousel__slide {
+        position: relative;
+        flex: 0 0 100%;
+        width: 100%;
+        background-image: url(../Assets/food/slide1.png);
+        background-size: cover;
+        counter-increment: item;
+
+        .carousel__snapper {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          scroll-snap-align: center;
+        }
+      }
+      
+      .carousel__slide:nth-child(2) {
+        background-image: url(../Assets/food/slide2.png);
+        background-size: cover;
+      }
+      
+      .carousel__slide:nth-child(3) {
+        background-image: url(../Assets/food/slide3.png);
+        background-size: cover;
+      }
+      
+      .carousel__slide:nth-child(4) {
+        background-image: url(../Assets/food/slide4.png);
+        background-size: cover;
+      }
+      
+      .carousel__slide:before {
+        content: counter(item);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -40%, 70px);
+        color: rgba(255, 255, 255, 0);
+        font-size: 2em;
+      }
+    }
+  }
 }
 
 *::-webkit-scrollbar {
@@ -64,75 +133,6 @@
 *::-webkit-scrollbar-thumb {
   background: transparent;
   border: none;
-}
-
-.carousel {
-  position:relative;
-  padding-top: 75%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
-  ol,
-  li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  background-image: url(../Assets/food/slide1.png);
-  background-size: cover;
-  counter-increment: item;
-}
-
-.carousel__slide:nth-child(2) {
-  background-image: url(../Assets/food/slide2.png);
-  background-size: cover;
-}
-
-.carousel__slide:nth-child(3) {
-  background-image: url(../Assets/food/slide3.png);
-  background-size: cover;
-}
-
-.carousel__slide:nth-child(4) {
-  background-image: url(../Assets/food/slide4.png);
-  background-size: cover;
-}
-
-.carousel__slide:before {
-  content: counter(item);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -40%, 70px);
-  color: rgba(255, 255, 255, 0);
-  font-size: 2em;
-}
-
-.carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
 }
 
 @media (hover: hover) {
@@ -219,23 +219,23 @@
   max-height: fit-content;
   margin: 0 auto;
   padding: 0 1.25rem 2rem;
-}
 
-.food {
-  font-family: Helvetica;
-  & h1 {
+  h1 {
     margin-top: 1rem;
     margin-bottom: 1.2rem;
   }
-  & h2 {
+  h2 {
+    margin: 0;
+    padding: 0;
     font-weight: lighter;
     margin-top: 1rem;
     margin-bottom: 1.2rem;
+    text-align: left;
   }
-  & p {
+  p {
     padding: 0;
     margin-bottom: 1rem;
-  }
+  }  
 }
 
 .food__description {
@@ -249,14 +249,10 @@
   background-color: rgba(219, 228, 221, 0.6);
   padding: 2rem;
   padding-top: 1rem;
-}
- 
-
-.food__menu {
   -webkit-animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
+ 
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(100%);
