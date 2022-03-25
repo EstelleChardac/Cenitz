@@ -1,5 +1,24 @@
+.slider {
+  overflow: hidden;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+.slider figure img {
+  width: 20%;
+  float: left;
+  object-fit: cover;
+}
+
 .plate {
     float: left;
+    object-fit: cover;
     padding: 1rem 1rem 1rem .2rem;
     margin-bottom: 3rem;
  }
@@ -30,22 +49,7 @@ a:hover {
   color: rgb(47, 153, 47);
 }
 
-#slider {
-  overflow: hidden;
-}
 
-#slider figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 20s slider infinite;
-}
-
-#slider figure img {
-  width: 20%;
-  float: left;
-}
 
 @keyframes slider {
   0% {
@@ -79,13 +83,20 @@ a:hover {
 
 
 @media all and (max-width: 1300px) {
-  #slider figure {
+  .slider figure {
     width: 500%;
   }
 }
 
+@media all and (max-width: 1300px) {
+  .slider__pics {
+    width: 100%;
+    height: 400px;
+  }
+}
+
 @media all and (max-width: 1000px) {
-  #slider figure {
+  .slider figure {
     width: 500%;
   }
 }
@@ -96,15 +107,12 @@ a:hover {
   }
 }
 
-@media all and (max-width: 1300px) {
-  .slide {
-    width: 100%;
-    height: 400px;
-  }
-}
 @media all and (max-width: 1000px) {
-  .slide {
+  .slider__pics {
     width: 100%;
     height: 300px;
   }
 }
+
+
+
