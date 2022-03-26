@@ -8,7 +8,6 @@
   align-items: center;
   background: #fff;
   outline: none;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 
   &__logo {
@@ -49,7 +48,7 @@
 .burgerNav {
   position: absolute;
   width: 12rem;
-  min-height: 100%;
+  height: 25rem;
   top: 4rem;
   background: #a9e2b54a;
   font-family: 'Montserrat', sans-serif;
@@ -181,4 +180,13 @@
   .burgerNav {
     display: none;
   }
+}
+
+@media all and (min-width: 460px) {
+  .burgerNav {
+    height: 17.6rem;
+  }
+.burgerNav__items{
+  padding-bottom: 0.4rem;
+  font-size: 1rem;
 }
