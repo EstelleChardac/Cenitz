@@ -289,7 +289,6 @@ body {
       opacity: 1; }
   .containerChef__text {
     padding: 15px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 0.8rem;
     letter-spacing: 10%; }
   .containerChef__image {
@@ -323,32 +322,69 @@ body {
     width: 26rem;
     height: 40rem; } }
 
-@media all and (max-width: 768px) {
-  .containerChef p {
-    font-size: 0.7rem; }
-  .containerChef h1 {
-    font-size: 0.8rem; }
-  .containerChef div {
-    height: 12rem;
-    width: 12rem; }
+@media all and (max-width: 1000px) {
+  .containerChef {
+    margin: 1rem div;
+      margin-height: 13rem;
+      margin-width: 13rem;
+      margin-transition: all 1s ease-in-out; }
+    .containerChef p {
+      font-size: 0.7rem; }
+    .containerChef h1 {
+      font-size: 0.8rem; }
   .containerChef__image {
     grid-area: 1/2/3/3;
     width: 20rem;
-    height: 32rem; } }
+    height: 28rem; } }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 880px) {
   .containerChef {
-    display: block;
-    margin-top: 1rem;
-    margin-left: 4rem; }
-    .containerChef p {
-      font-size: 0.6rem; }
+    margin: 1rem;
+    align-items: center; }
     .containerChef div {
-      height: 10rem;
-      width: 10rem; }
-    .containerChef__image {
-      width: 10rem;
-      height: 16rem; } }
+      height: 12rem;
+      width: 12rem;
+      transition: all 1s ease-in-out; }
+    .containerChef p {
+      font-size: 0.7rem; }
+    .containerChef h1 {
+      font-size: 0.8rem; }
+  .containerChef__image {
+    grid-area: 1/2/3/3;
+    width: 20rem;
+    height: 28rem; } }
+
+@media all and (max-width: 780px) {
+  .containerChef {
+    margin: 1rem; }
+    .containerChef div {
+      height: 11rem;
+      width: 11rem; } }
+
+@media all and (max-width: 755px) {
+  .containerChef {
+    margin: 1rem; }
+    .containerChef div {
+      height: 10.6rem;
+      width: 10.6rem; }
+  p {
+    font-size: 0.4rem; }
+  h1 {
+    font-size: 0.7rem; } }
+
+@media all and (max-width: 720px) {
+  .containerChef {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem; }
+    .containerChef div {
+      height: 14rem;
+      width: 14rem; }
+  p {
+    font-size: 1.5rem; }
+  h1 {
+    font-size: 1.2rem; } }
 
 .contact__form {
   font-family: Helvetica;
