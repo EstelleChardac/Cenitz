@@ -67,7 +67,14 @@ body {
     height: 2rem;
     right: 1rem;
     cursor: pointer;
-    display: none; }
+    visibility: hidden; }
+  .navBar__burgerClose {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 1rem;
+    cursor: pointer;
+    visibility: hidden; }
 
 .burgerNav {
   position: absolute;
@@ -101,6 +108,7 @@ body {
       color: #a0a0a0; }
 
 .show {
+  visibility: visible;
   display: block; }
 
 @media all and (max-width: 1388px) {
@@ -166,7 +174,8 @@ body {
     display: none; }
   .navBar__burger {
     display: flex;
-    outline: none; } }
+    outline: none;
+    visibility: visible; } }
 
 @media all and (min-width: 876px) {
   .burgerNav {
@@ -250,6 +259,26 @@ body {
   .footer__infos:nth-child(5) {
     display: none; } }
 
+@media all and (max-width: 580px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: space-around; }
+  .footer__infos {
+    margin: auto; }
+  .footer__infos:nth-child(2) {
+    display: none; }
+  .footer__infos:nth-child(3) {
+    display: none; }
+  .footer__infos:nth-child(4) {
+    display: flex; }
+  .footer__infos:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
 .hero {
   position: fixed;
   width: 100vw;
@@ -264,6 +293,48 @@ body {
     right: 0;
     bottom: 0;
     background-position: left; }
+
+.restoInfos {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 23rem;
+  visibility: hidden; }
+  .restoInfos__details {
+    color: #a0b48d; }
+  .restoInfos__image {
+    width: 3rem;
+    height: 3rem;
+    display: none; }
+
+@media all and (max-width: 595px) {
+  .restoInfos {
+    visibility: visible;
+    top: 26rem; }
+    .restoInfos__details {
+      font-size: 1rem; }
+  .footer__infos {
+    font-size: .7rem; } }
+
+@media all and (max-width: 440px) {
+  .restoInfos {
+    visibility: visible;
+    top: 20rem; }
+    .restoInfos__details {
+      font-size: 0.8rem; }
+  .restoInfos__image {
+    width: 2rem;
+    height: 2rem;
+    display: inline; } }
+
+@media all and (max-width: 390px) {
+  .restoInfos {
+    top: 17rem; }
+    .restoInfos__details {
+      font-size: 1rem; } }
 
 .containerChef {
   display: grid;

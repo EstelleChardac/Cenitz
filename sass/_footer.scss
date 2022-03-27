@@ -97,8 +97,37 @@
     font-size: 0.7rem;
     justify-content: space-between;
   }
-  
+
   .footer__infos:nth-child(5) {
     display: none;
+  }
+}
+@media all and (max-width: 580px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: space-around;
+  }
+
+  .footer__infos {
+    margin: auto;
+  }
+
+  .footer__infos:nth-child(2) {
+    display: none;
+  }
+  .footer__infos:nth-child(3) {
+    display: none;
+  }
+  .footer__infos:nth-child(4) {
+    display: flex;
+  }
+
+  .footer__infos:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
