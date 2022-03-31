@@ -439,7 +439,7 @@ body {
   color: transparent; }
 
 .contact__text {
-  padding: 30px;
+  padding: 1.7rem;
   background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -448,9 +448,10 @@ body {
   margin: auto;
   width: 50%;
   margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  text-align: justify;
-  text-justify: inter-word; }
+  margin-bottom: 1.5rem; }
+
+.contact__reservation {
+  display: none; }
 
 #submit {
   border: none;
@@ -463,26 +464,32 @@ body {
 #submit:hover {
   background: #dbe4dd; }
 
-@media all and (max-width: 1087px) {
+@media all and (max-width: 1500px) {
   .contact__label {
     margin-top: -0.5rem; } }
 
-@media all and (max-width: 651px) {
-  .contact__label {
-    margin-top: -0.9rem; } }
+@media all and (max-width: 890px) {
+  .contact__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; } }
 
-@media all and (max-width: 651px) {
-  .contact__label {
-    margin-top: -1.2rem; } }
+@media all and (max-width: 890px) {
+  .contact__text {
+    font-size: 1rem; } }
 
-@media all and (max-width: 463px) {
+@media all and (max-width: 890px) {
   .contact__label {
-    margin-top: -1.8rem; } }
+    margin-top: -1rem; } }
 
-@media all and (max-width: 395px) {
-  .contact__label {
-    min-width: 395px;
-    margin-top: -2.6rem; } }
+@media all and (max-width: 890px) {
+  #submit {
+    margin-left: 1.5rem; } }
+
+@media all and (max-width: 890px) {
+  .contact__form__input {
+    margin-left: 1rem; } }
 
 .boxcarousel {
   max-width: 50rem;
