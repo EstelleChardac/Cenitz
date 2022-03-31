@@ -287,12 +287,13 @@ body {
   justify-content: center;
   z-index: -1; }
   .hero__video {
-    position: absolute;
-    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
     top: 0;
-    right: 0;
-    bottom: 0;
-    background-position: left; }
+    left: 0;
+    z-index: -1; }
 
 .restoInfos {
   position: absolute;
@@ -317,7 +318,7 @@ body {
     .restoInfos__details {
       font-size: 1rem; }
   .footer__infos {
-    font-size: .7rem; } }
+    font-size: 0.7rem; } }
 
 @media all and (max-width: 440px) {
   .restoInfos {

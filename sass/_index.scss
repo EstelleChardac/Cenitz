@@ -1,73 +1,74 @@
 // >> Homepage hero page
 .hero {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  z-index: -1;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	z-index: -1;
 
-  &__video {
-    position: absolute;
-    max-width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-position: left;
-  }
+	&__video {
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
 }
 
 .restoInfos {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 23rem;
-  visibility: hidden;
+	position: absolute;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 23rem;
+	visibility: hidden;
 
-  &__details {
-    color: #a0b48d;
-  }
+	&__details {
+		color: #a0b48d;
+	}
 
-  &__image {
-    width: 3rem;
-    height: 3rem;
-    display: none;
-  }
+	&__image {
+		width: 3rem;
+		height: 3rem;
+		display: none;
+	}
 }
 @media all and (max-width: 595px) {
-  .restoInfos {
-    visibility: visible;
-    top: 26rem;
-    &__details {
-      font-size: 1rem;
-    }
-  }
-  .footer__infos {
-    font-size: .7rem;
-  }
+	.restoInfos {
+		visibility: visible;
+		top: 26rem;
+		&__details {
+			font-size: 1rem;
+		}
+	}
+	.footer__infos {
+		font-size: 0.7rem;
+	}
 }
 @media all and (max-width: 440px) {
-  .restoInfos {
-    visibility: visible;
-    top: 20rem;
-    &__details {
-      font-size: 0.8rem;
-    }
-  }
-  .restoInfos__image {
-    width: 2rem;
-    height: 2rem;
-    display: inline;
-  }
+	.restoInfos {
+		visibility: visible;
+		top: 20rem;
+		&__details {
+			font-size: 0.8rem;
+		}
+	}
+	.restoInfos__image {
+		width: 2rem;
+		height: 2rem;
+		display: inline;
+	}
 }
 @media all and (max-width: 390px) {
-  .restoInfos {
-    top: 17rem;
-    &__details {
-      font-size: 1rem;
-    }
-  }
+	.restoInfos {
+		top: 17rem;
+		&__details {
+			font-size: 1rem;
+		}
+	}
 }

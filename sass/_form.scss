@@ -1,5 +1,5 @@
 .contact {
-        // Bloc Géneral input //
+        // >> Bloc Géneral input //
     &__form {
         font-family: Helvetica;
         font-weight: lighter; 
@@ -34,7 +34,7 @@
                 color: transparent;
             
     }
-        // Bloc principal Txt //
+        // >> Bloc principal Txt //
     &__text {
         padding: 30px;
         background: rgba(255, 255, 255, 0.13);
@@ -48,7 +48,7 @@
         margin-bottom: 1.5rem;
     }
 }
-         // Bouton //
+         // >> Bouton //
 #submit {
     border: none;
     font-size: small;
