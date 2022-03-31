@@ -199,7 +199,6 @@ body {
   justify-content: space-around;
   align-items: center; }
   .footer__infos {
-    font-weight: bold;
     text-decoration: none;
     color: inherit; }
     .footer__infos:hover {
@@ -264,7 +263,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     justify-content: space-around; }
   .footer__infos {
     margin: auto; }
@@ -449,13 +448,17 @@ body {
   margin: auto;
   width: 50%;
   margin-top: 3rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  text-justify: inter-word; }
 
 #submit {
   border: none;
   font-size: small;
+  padding: 0.3rem;
   background: rgba(255, 255, 255, 0.13);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.205); }
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.205);
+  cursor: pointer; }
 
 #submit:hover {
   background: #dbe4dd; }
@@ -624,7 +627,7 @@ body {
 
 .carousel::before,
 .carousel::after {
-  content: "";
+  content: '';
   z-index: 1;
   background-color: rgba(51, 51, 51, 0.11);
   background-size: 1.5rem 1.5rem;
@@ -661,7 +664,8 @@ body {
     font-weight: lighter;
     margin-top: 1rem;
     margin-bottom: 1.2rem;
-    text-align: left; }
+    text-align: left;
+    font-weight: bold; }
   .food p {
     padding: 0;
     margin-bottom: 1rem; }
@@ -669,7 +673,9 @@ body {
 .food__description {
   grid-area: 1 / 1 / 2 / 2;
   padding: 2rem;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  text-align: justify;
+  text-justify: inter-word; }
 
 .food__menu {
   grid-area: 1 / 2 / 2 / 3;
@@ -677,7 +683,9 @@ body {
   padding: 2rem;
   padding-top: 1rem;
   -webkit-animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  text-align: justify;
+  text-justify: inter-word; }
 
 @-webkit-keyframes slide-left {
   0% {
@@ -733,12 +741,6 @@ body {
     font-size: 1.2rem;
     text-align: justify;
     text-justify: inter-word; }
-
-.link {
-  color: black; }
-
-a:hover {
-  color: #2f992f; }
 
 @keyframes slider {
   0% {
@@ -803,7 +805,7 @@ a:hover {
     font-size: 0.9rem;
     line-height: 1.1rem; } }
 
-@media all and (max-width: 585px) {
+@media all and (max-width: 588px) {
   .restoPresentation__title {
     font-size: 0.9rem;
     margin-top: -1.7rem; }
@@ -811,3 +813,9 @@ a:hover {
     font-size: 0.9rem;
     line-height: 1rem;
     margin-top: -0.3rem; } }
+
+@media all and (max-width: 488px) {
+  .text__presentation {
+    font-size: 0.86rem; }
+  .responsive {
+    display: none; } }

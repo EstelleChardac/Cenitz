@@ -10,7 +10,6 @@
 	justify-content: space-around;
 	align-items: center;
 	&__infos {
-		font-weight: bold;
 		text-decoration: none;
 		color: inherit;
 		&:hover {
@@ -107,7 +106,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 		justify-content: space-around;
 	}
 

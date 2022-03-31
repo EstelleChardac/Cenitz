@@ -1,158 +1,163 @@
+// >> Slider
+
 .slider {
-  overflow: hidden;
+	overflow: hidden;
 
-  &__figures {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-    &__pictures {
-      width: 20%;
-      float: left;
-      object-fit: cover;
-    }
-  }
+	&__figures {
+		position: relative;
+		width: 500%;
+		margin: 0;
+		left: 0;
+		animation: 20s slider infinite;
+		&__pictures {
+			width: 20%;
+			float: left;
+			object-fit: cover;
+		}
+	}
 }
-
+// >> Plate picture
 .plate {
-  float: left;
-  object-fit: cover;
-  padding: 1rem 1rem 1rem 0.2rem;
-  margin-bottom: 3rem;
+	float: left;
+	object-fit: cover;
+	padding: 1rem 1rem 1rem 0.2rem;
+	margin-bottom: 3rem;
 }
 
+// >> Restaurant presentation
 .restoPresentation {
-  &__title {
-    text-align: center;
-    padding: 3rem 0 1rem;
-  }
+	&__title {
+		text-align: center;
+		padding: 3rem 0 1rem;
+	}
 }
 
 .text {
-  width: 100%;
-  height: 10rem;
-  text-align: justify;
-  letter-spacing: 10%;
-  padding-right: 1rem;
-  &__presentation {
-    line-height: 1.6rem;
-    font-size: 1.2rem;
-    text-align: justify;
-    text-justify: inter-word;
-  }
+	width: 100%;
+	height: 10rem;
+	text-align: justify;
+	letter-spacing: 10%;
+	padding-right: 1rem;
+	&__presentation {
+		line-height: 1.6rem;
+		font-size: 1.2rem;
+		text-align: justify;
+		text-justify: inter-word;
+	}
 }
 
-.link {
-  color: black;
-}
-
-a:hover {
-  color: rgb(47, 153, 47);
-}
-
+// >> ANIMATIONS
 @keyframes slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+// ! RESPONSIVNESS
+@media all and (max-width: 1300px) {
+	.slider figure {
+		width: 500%;
+	}
 }
 
 @media all and (max-width: 1300px) {
-  .slider figure {
-    width: 500%;
-  }
-}
-
-@media all and (max-width: 1300px) {
-  .slider__pics {
-    width: 100%;
-    height: 400px;
-  }
+	.slider__pics {
+		width: 100%;
+		height: 400px;
+	}
 }
 
 @media all and (max-width: 1000px) {
-  .slider figure {
-    width: 500%;
-  }
+	.slider figure {
+		width: 500%;
+	}
 }
 
 @media all and (max-width: 1000px) {
-  .plate {
-    width: 100%;
-  }
+	.plate {
+		width: 100%;
+	}
 }
 
 @media all and (max-width: 1000px) {
-  .slider__pics {
-    width: 100%;
-    height: 300px;
-  }
+	.slider__pics {
+		width: 100%;
+		height: 300px;
+	}
 }
 @media all and (max-width: 1000px) {
-  .text {
-    width: 100%;
-  }
+	.text {
+		width: 100%;
+	}
 
-  .text__presentation {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
+	.text__presentation {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
 
-  .plate {
-    display: none;
-  }
+	.plate {
+		display: none;
+	}
 }
 
 @media all and (max-width: 1000px) {
-  .text__presentation {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .plate {
-    display: none;
-  }
+	.text__presentation {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+	.plate {
+		display: none;
+	}
 }
 
 @media all and (max-width: 798px) {
-  .text__presentation {
-    font-size: 0.9rem;
-    line-height: 1.1rem;
-  }
+	.text__presentation {
+		font-size: 0.9rem;
+		line-height: 1.1rem;
+	}
 }
 
-@media all and (max-width: 585px) {
-  .restoPresentation__title {
-    font-size: 0.9rem;
-    margin-top: -1.7rem;
-  }
+@media all and (max-width: 588px) {
+	.restoPresentation__title {
+		font-size: 0.9rem;
+		margin-top: -1.7rem;
+	}
 
-  .text__presentation {
-    font-size: 0.9rem;
-    line-height: 1rem;
-    margin-top: -0.3rem;
-  }
+	.text__presentation {
+		font-size: 0.9rem;
+		line-height: 1rem;
+		margin-top: -0.3rem;
+	}
+}
+@media all and (max-width: 488px) {
+	.text__presentation {
+		font-size: 0.86rem;
+	}
+	.responsive {
+		display: none;
+	}
 }

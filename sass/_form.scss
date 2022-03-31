@@ -1,84 +1,85 @@
 .contact {
-        // >> Bloc Géneral input //
-    &__form {
-        font-family: Helvetica;
-        font-weight: lighter; 
-        display:flex;
-        flex-direction: column;
-        align-items: center;    
-        margin: auto;
-        &__input {
-            padding: 10px;
-            background: rgba(255, 118, 5, 0);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 50%;
-            outline: none;
-        } 
-        textarea {
-            font-family: Helvetica;
-            resize: none;
-        }
-            input:focus {
-            border: 2px solid rgb(219, 228, 221);        
-        }
-            input:focus::placeholder{
-                color: transparent;
-            }
-            textarea:focus {
-                border: 2px solid rgb(219, 228, 221); 
-            }
-        }   textarea:focus::placeholder{
-                color: transparent;
-            
-    }
-        // >> Bloc principal Txt //
-    &__text {
-        padding: 30px;
-        background: rgba(255, 255, 255, 0.13);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        width: 50%;
-        margin-top: 3rem;
-        margin-bottom: 1.5rem;
-    }
+	// >> General Input Bloc //
+	&__form {
+		font-family: Helvetica;
+		font-weight: lighter;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: auto;
+		&__input {
+			padding: 10px;
+			background: rgba(255, 118, 5, 0);
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 50%;
+			outline: none;
+		}
+		textarea {
+			font-family: Helvetica;
+			resize: none;
+		}
+		input:focus {
+			border: 2px solid rgb(219, 228, 221);
+		}
+		input:focus::placeholder {
+			color: transparent;
+		}
+		textarea:focus {
+			border: 2px solid rgb(219, 228, 221);
+		}
+	}
+	textarea:focus::placeholder {
+		color: transparent;
+	}
+	// >> TxT Principal Bloc //
+	&__text {
+		padding: 30px;
+		background: rgba(255, 255, 255, 0.13);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: auto;
+		width: 50%;
+		margin-top: 3rem;
+		margin-bottom: 1.5rem;
+		text-align: justify;
+		text-justify: inter-word;
+	}
 }
-         // >> Bouton //
+
+// >> Button //
 #submit {
-    border: none;
-    font-size: small;
-    background: rgba(255, 255, 255, 0.13);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.205);   
+	border: none;
+	font-size: small;
+	padding: 0.3rem;
+	background: rgba(255, 255, 255, 0.13);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.205);
+	cursor: pointer;
 }
 #submit:hover {
-    background:rgb(219, 228, 221);
+	background: rgb(219, 228, 221);
 }
-// RESPONSIVNESS //
-.contact__label{
-    @media all and (max-width: 1087px) 
-         {
-            margin-top: -0.5rem;
-        }
-    @media all and (max-width: 651px) 
-         {
-            margin-top: -0.9rem;
-        }
-    @media all and (max-width: 651px) 
-         {
-            margin-top: -1.2rem;
-        }
-    @media all and (max-width: 463px) 
-         {
-            margin-top: -1.8rem;
-        }
-    @media all and (max-width: 395px) 
-        {
-            min-width: 395px;
-            margin-top: -2.6rem;
-         }
-    }
+
+// ! RESPONSIVNESS
+.contact__label {
+	@media all and (max-width: 1087px) {
+		margin-top: -0.5rem;
+	}
+	@media all and (max-width: 651px) {
+		margin-top: -0.9rem;
+	}
+	@media all and (max-width: 651px) {
+		margin-top: -1.2rem;
+	}
+	@media all and (max-width: 463px) {
+		margin-top: -1.8rem;
+	}
+	@media all and (max-width: 395px) {
+		min-width: 395px;
+		margin-top: -2.6rem;
+	}
+}
